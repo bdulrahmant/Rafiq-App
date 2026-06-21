@@ -1,0 +1,20 @@
+import malek from '../assets/malek.png'
+export const patients = [
+  { id: "#88291", name: "بلال أحمد", visits: 5, lastVisit: "1/10/2026", status: "نشط", image: malek},
+  { id: "#88292", name: "محمد عادل", visits: 8, lastVisit: "1/10/2026", status: "نشط", image: malek},
+  { id: "#88293", name: "إبراهيم صلاح", visits: 12, lastVisit: "1/10/2026", status: "نشط", image: malek},
+  { id: "#88294", name: "علي ياسر", visits: 1, lastVisit: "1/10/2026", status: "نشط", image: malek},
+  { id: "#88295", name: "أحمد محمود", visits: 3, lastVisit: "25/2/2029", status: "نشط", image: malek},
+  { id: "#88296", name: "يوسف خالد", visits: 7, lastVisit: "8/11/2026", status: "نشط", image: malek},
+  { id: "#88297", name: "كريم حسن", visits: 2, lastVisit: "5/11/2026", status: "نشط", image: malek},
+  { id: "#88245697", name: "كريم حسن", visits: 2, lastVisit: "5/11/2026", status: "نشط", image: malek},
+  { id: "#88298", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#88299", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#882990", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#882980", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#882985", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#882983", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#8829854", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#8829898", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+  { id: "#88298543", name: "مالك محمد حماد", visits: 9, lastVisit: "2/11/2026", status: "نشط", image: malek},
+];

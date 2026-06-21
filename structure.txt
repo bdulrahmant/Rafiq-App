@@ -1,0 +1,248 @@
+Folder PATH listing
+Volume serial number is 00000080 2044:E3A1
+D:\????? ??????\GRADUATION_PROJECT_FRONTEND-MAIN\GRADUATION_PROJECT_FRONTEND-MAIN\SRC
+³   App.css
+³   App.jsx
+³   index.css
+³   main.jsx
+³   
+ÃÄÄÄapi
+³       appointments.api.js
+³       articles.api.js
+³       auth.api.js
+³       availability.api.js
+³       axios.js
+³       doctors.api.js
+³       patient.api.js
+³       
+ÃÄÄÄassets
+³       article1.png
+³       article2.png
+³       article3.png
+³       balto.png
+³       doctor-login-illustration.png
+³       doctor-login-logo.png
+³       Doctors.png
+³       Dr.Ahmed.png
+³       Dr.Malek.png
+³       Dr.taha.png
+³       Group 3432.png
+³       pattern.png
+³       rafiq-heart.png
+³       rafiq-logo.png
+³       rafiq-salam.png
+³       rafiq-white-logo.png
+³       rafiq_chat.png
+³       react.svg
+³       signup-illustration.png
+³       signup-logo.png
+³       
+ÃÄÄÄcomponents
+³   ³   ProtectedRoute.jsx
+³   ³   
+³   ÃÄÄÄlayout
+³   ³       Footer.jsx
+³   ³       Navbar.jsx
+³   ³       UserNavbar.jsx
+³   ³       
+³   ÃÄÄÄshared
+³   ³       ProtectedRoute.jsx
+³   ³       
+³   ÀÄÄÄui
+³           AppointmentsSection.jsx
+³           AuthMessageModal.jsx
+³           badge.jsx
+³           Button.jsx
+³           card.jsx
+³           DoctorCard.jsx
+³           DoctorCardLisiting.jsx
+³           DoctorIncompleteWarning.jsx
+³           DoctorSignupSuccess.jsx
+³           FAQItem.jsx
+³           MedicalFilesSection.jsx
+³           SpecialtyBadge.jsx
+³           SuccessModal.jsx
+³           
+ÃÄÄÄlib
+³       utils.js
+³       
+ÃÄÄÄpages
+³   ÃÄÄÄarticles
+³   ³       SavedArticlesPage.jsx
+³   ³       
+³   ÃÄÄÄauth
+³   ³       DoctorLogin.jsx
+³   ³       DoctorSignup.jsx
+³   ³       ForgotPasswordPage.jsx
+³   ³       Login.jsx
+³   ³       ResetPasswordPage.jsx
+³   ³       ResetSuccessPage.jsx
+³   ³       SignUp.jsx
+³   ³       UserSignup.jsx
+³   ³       VerifyOtpPage.jsx
+³   ³       
+³   ÃÄÄÄbooking
+³   ³       Booking.jsx
+³   ³       BookingDetails.jsx
+³   ³       BookingSuccess.jsx
+³   ³       MyBookings.jsx
+³   ³       Payment.jsx
+³   ³       
+³   ÃÄÄÄchatbot
+³   ³       Chatbot.jsx
+³   ³       
+³   ÃÄÄÄdoctor
+³   ³       DoctorProfile.jsx
+³   ³       
+³   ÃÄÄÄfiles
+³   ³       FilesPage.jsx
+³   ³       UploadFilePage.jsx
+³   ³       
+³   ÃÄÄÄhome
+³   ³   ³   DoctorHome.jsx
+³   ³   ³   Landing.jsx
+³   ³   ³   PatientHome.jsx
+³   ³   ³   
+³   ³   ÀÄÄÄsrc
+³   ³       ³   App.jsx
+³   ³       ³   index.css
+³   ³       ³   main.jsx
+³   ³       ³   
+³   ³       ÃÄÄÄassets
+³   ³       ³   ³   doc.png
+³   ³       ³   ³   malek.jpg
+³   ³       ³   ³   malek.png
+³   ³       ³   ³   
+³   ³       ³   ÀÄÄÄimages
+³   ³       ³       ÃÄÄÄAuth
+³   ³       ³       ³       auth.png
+³   ³       ³       ³       chooseaccount.png
+³   ³       ³       ³       doc.auth.png
+³   ³       ³       ³       doctor.png
+³   ³       ³       ³       person.png
+³   ³       ³       ³       
+³   ³       ³       ÀÄÄÄHome
+³   ³       ³           ÀÄÄÄDoctor
+³   ³       ³               ÃÄÄÄicon
+³   ³       ³               ³       akar-icons_edit.png
+³   ³       ³               ³       appointments.png
+³   ³       ³               ³       articles.png
+³   ³       ³               ³       bell.png
+³   ³       ³               ³       calender.png
+³   ³       ³               ³       call.png
+³   ³       ³               ³       frame.png
+³   ³       ³               ³       Group 3444.png
+³   ³       ³               ³       hagz.png
+³   ³       ³               ³       home.png
+³   ³       ³               ³       Label.png
+³   ³       ³               ³       location.png
+³   ³       ³               ³       logout.png
+³   ³       ³               ³       mail.png
+³   ³       ³               ³       money.png
+³   ³       ³               ³       patients.png
+³   ³       ³               ³       promocode.png
+³   ³       ³               ³       rate.png
+³   ³       ³               ³       search.png
+³   ³       ³               ³       setting.png
+³   ³       ³               ³       
+³   ³       ³               ÀÄÄÄimg
+³   ³       ³                       childrenfood.png
+³   ³       ³                       rafiklogo.png
+³   ³       ³                       rafilklogowhite.png
+³   ³       ³                       vitamins.png
+³   ³       ³                       
+³   ³       ÃÄÄÄcomponents
+³   ³       ³   ÃÄÄÄAuth
+³   ³       ³   ³       Account.card.jsx
+³   ³       ³   ³       Form.auth.jsx
+³   ³       ³   ³       image.auth.jsx
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄHome
+³   ³       ³       ³   DonePopup.jsx
+³   ³       ³       ³   Footer.jsx
+³   ³       ³       ³   Navbar.jsx
+³   ³       ³       ³   NotificationsCard.jsx
+³   ³       ³       ³   Popup.jsx
+³   ³       ³       ³   SettingsCard.jsx
+³   ³       ³       ³   Sidebar.jsx
+³   ³       ³       ³   
+³   ³       ³       ÃÄÄÄDoctorAppointmentsPage
+³   ³       ³       ³       AddAppointment.jsx
+³   ³       ³       ³       
+³   ³       ³       ÃÄÄÄDoctorArticlePage
+³   ³       ³       ÀÄÄÄDoctorHomePage
+³   ³       ³               ArticlesSection.jsx
+³   ³       ³               QuickActions.jsx
+³   ³       ³               RecentBookings.jsx
+³   ³       ³               StatsCards.jsx
+³   ³       ³               TodaySchedule.jsx
+³   ³       ³               
+³   ³       ÃÄÄÄlayouts
+³   ³       ³       Auth.layout.jsx
+³   ³       ³       Doctor.layout.jsx
+³   ³       ³       SettingsLayout.jsx
+³   ³       ³       
+³   ³       ÃÄÄÄpages
+³   ³       ³   ÃÄÄÄAuth
+³   ³       ³   ³       Choose.account.jsx
+³   ³       ³   ³       Doctor.login.jsx
+³   ³       ³   ³       User.login.jsx
+³   ³       ³   ³       
+³   ³       ³   ÀÄÄÄHome
+³   ³       ³       ÀÄÄÄDoctor
+³   ³       ³           ³   doctor.Appointments.jsx
+³   ³       ³           ³   doctor.Articles.jsx
+³   ³       ³           ³   doctor.home.jsx
+³   ³       ³           ³   doctor.Patients.jsx
+³   ³       ³           ³   doctor.profile.jsx
+³   ³       ³           ³   doctor.Settings.jsx
+³   ³       ³           ³   DoctorProfile.jsx
+³   ³       ³           ³   Notification.jsx
+³   ³       ³           ³   
+³   ³       ³           ÀÄÄÄsetting
+³   ³       ³                   Earnings.jsx
+³   ³       ³                   EditClinic.jsx
+³   ³       ³                   EditPassword.jsx
+³   ³       ³                   EditProfile.jsx
+³   ³       ³                   NotificationsCard.jsx
+³   ³       ³                   PaymentSettings.jsx
+³   ³       ³                   
+³   ³       ÃÄÄÄroutes
+³   ³       ³       AppRoutes.jsx
+³   ³       ³       AuthRoutes.jsx
+³   ³       ³       DoctorRoutes.jsx
+³   ³       ³       SettingsRoutes.jsx
+³   ³       ³       
+³   ³       ÃÄÄÄservices
+³   ³       ³       api.js
+³   ³       ³       appointments.service.js
+³   ³       ³       login.js
+³   ³       ³       notifications.service.js
+³   ³       ³       
+³   ³       ÀÄÄÄutils
+³   ³               articlesData.js
+³   ³               Patients.data.js
+³   ³               transactions.data.js
+³   ³               
+³   ÃÄÄÄlisting
+³   ³       Listing.jsx
+³   ³       
+³   ÃÄÄÄnotifications
+³   ³       NotificationsPage.jsx
+³   ³       
+³   ÃÄÄÄprofile
+³   ³       CompleteDoctorProfile.jsx
+³   ³       CompleteProfile.jsx
+³   ³       EditProfile.jsx
+³   ³       MedicalProfile.jsx
+³   ³       Profile.jsx
+³   ³       
+³   ÀÄÄÄsettings
+³           ChangePassword.jsx
+³           
+ÃÄÄÄservices
+³       chatSocket.js
+³       
+ÀÄÄÄutils
+        auth.js
+        
