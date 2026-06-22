@@ -1,5 +1,5 @@
 import { MapPin, Mail, Phone } from "lucide-react";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import { Link, useNavigate } from "react-router-dom";
 
 import rafiqWhiteLogo from "../../assets/rafiq-white-logo.png";
@@ -32,13 +32,13 @@ export default function Footer() {
               ويختار لك التخصص المناسب بسرعة.
             </p>
 
-            <Button
+            <button
               variant="secondary"
               className="w-full max-w-[300px]"
               onClick={() => navigate("/listing")}
             >
               احجز الموعد
-            </Button>
+            </button>
 
           </div>
 
