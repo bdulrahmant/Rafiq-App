@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import axios from "axios";
 import { Upload, FileText } from "lucide-react";
-import { Button } from "./button";
+// import { Button } from "./button";
 
 const USE_API = false; // 👈 خليها true لما تربط بالباك
 
@@ -65,14 +65,14 @@ const MedicalFilesSection = () => {
           الملفات الطبية
         </h3>
 
-        <Button
+        <button 
           variant="primary"
           className="flex items-center gap-2 h-[42px] px-4"
           onClick={() => fileInputRef.current.click()}
         >
           <Upload size={16} />
           <span>رفع ملف جديد</span>
-        </Button>
+        </button >
 
         {/* hidden input */}
         <input

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Check, ChevronDown } from "lucide-react";
 import { updateMedicalProfile } from "../../api/patient.api";
 import Footer from "../../components/layout/Footer";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
 import SuccessModal from "../../components/ui/SuccessModal";
 import AuthMessageModal from "../../components/ui/AuthMessageModal";
 
@@ -380,14 +380,14 @@ export default function MedicalProfile() {
           </div>
 
           <div className="mt-8 flex justify-center pb-4 sm:pb-6">
-            <Button
+            <button
               type="button"
               variant="primary"
               className="w-full max-w-2xl py-4 rounded-2xl text-lg font-bold shadow-md"
               onClick={handleSubmit}
             >
               حفظ التعديلات
-            </Button>
+            </button>
           </div>
           <AuthMessageModal
             open={modal.open}

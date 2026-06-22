@@ -37,3 +37,10 @@ coverage/
 # temporary
 *.tmp
 *.temp
+
+# vercel
+.vercel
+
+# env
+.env
+.env.*

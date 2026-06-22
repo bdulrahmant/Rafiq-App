@@ -3,7 +3,7 @@
 import { MapPin, Star, Wallet } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { Button } from "./button";
+// import { Button } from "./button";
 
 export default function DoctorCard({
   // id,
@@ -88,7 +88,7 @@ export default function DoctorCard({
       {/* BUTTON */}
       <div className="w-full px-4">
 
-        <Button
+        <button 
           variant="primary"
           size="md"
           disabled={!available}
@@ -101,7 +101,7 @@ export default function DoctorCard({
           }`}
         >
           {available ? "احجز الآن" : "غير متاح"}
-        </Button>
+        </button >
 
       </div>
 

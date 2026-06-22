@@ -1,6 +1,6 @@
 import { CloudUpload, FileText, Pill, Activity, Syringe, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
 import Footer from "../../components/layout/Footer";
 import { useEffect, useState } from "react";
 import { getPatientFiles } from "../../api/patient.api";
@@ -199,12 +199,12 @@ export default function FilesPage() {
             ))}
           </div>
 
-          <Button variant="primary"
+          <button  variant="primary"
             onClick={() => navigate("/upload-file")}
             className="bg-[#468EEC] hover:bg-[#3A7AD9] text-white px-6 py-3 rounded-lg shadow-sm">
             <CloudUpload className="w-5 h-5 ml-2" />
             رفع ملف جديد
-          </Button>
+          </button >
 
         </div>
 

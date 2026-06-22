@@ -3,7 +3,7 @@
 
 
 import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import { MapPin, Bell, User, Menu } from "lucide-react";
 import rafiqLogo from "../../assets/rafiq-logo.png";
 
@@ -21,15 +21,15 @@ export default function Navbar({
             {showAuthButtons ? (
               <>
                 <Link to="/signup">
-                  <Button variant="outline" size="sm">
+                  <button  variant="outline" size="sm">
                     إنشاء حساب جديد
-                  </Button>
+                  </button >
                 </Link>
 
                 <Link to="/login">
-                  <Button variant="primary" size="sm">
+                  <button  variant="primary" size="sm">
                     تسجيل الدخول
-                  </Button>
+                  </button >
                 </Link>
               </>
             ) : (

@@ -228,11 +228,11 @@ export default function UploadFilePage() {
 
         {/* Button */}
         <div className="flex justify-center mt-2">
-          <Button
+          <button 
             onClick={handleSubmit}
             className="w-full max-w-[400px] bg-[#468EEC] hover:bg-[#3578d4] text-white rounded-xl py-6 font-bold text-lg">
             حفظ الملف
-          </Button>
+          </button >
           <AuthMessageModal
             open={modal.open}
             title={modal.title}
