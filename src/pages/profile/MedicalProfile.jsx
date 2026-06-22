@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Check, ChevronDown } from "lucide-react";
 import { updateMedicalProfile } from "../../api/patient.api";
 import Footer from "../../components/layout/Footer";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/Button";
 import SuccessModal from "../../components/ui/SuccessModal";
 import AuthMessageModal from "../../components/ui/AuthMessageModal";
 

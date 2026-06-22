@@ -3,7 +3,8 @@
 import { MapPin, Star, Wallet } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import { Button } from "./button";
+// import { Button } from "./button";
+import { Button } from "./Button";
 
 export default function DoctorCard({
   // id,

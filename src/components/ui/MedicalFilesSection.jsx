@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import axios from "axios";
 import { Upload, FileText } from "lucide-react";
-import { Button } from "./button";
+// import { Button } from "./button";
+import { Button } from "./Button";
 
 const USE_API = false; // 👈 خليها true لما تربط بالباك
 

@@ -1,6 +1,7 @@
 import { CloudUpload, FileText, Pill, Activity, Syringe, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/Button";
 import Footer from "../../components/layout/Footer";
 import { useEffect, useState } from "react";
 import { getPatientFiles } from "../../api/patient.api";

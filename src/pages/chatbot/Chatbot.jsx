@@ -18,7 +18,8 @@ import {
 
 import Navbar from "../../components/layout/UserNavbar";
 import Footer from "../../components/layout/Footer";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/Button";
 import rafiqSalam from "../../assets/rafiq_chat.png";
 import {
   connectSocket,

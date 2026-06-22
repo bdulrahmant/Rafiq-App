@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, User, CalendarDays, Activity, Scale, Ruler, Droplet, FileText, Syringe, Pill, FilePlus2 } from "lucide-react";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/Button";
 import { Card } from "../../components/ui/card";
 import { Badge } from "../../components/ui/badge";
 import { cn } from "../../lib/utils";
