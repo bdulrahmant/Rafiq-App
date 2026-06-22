@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { User } from "lucide-react";
 import Footer from "../../components/layout/Footer";
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
 import SuccessModal from "../../components/ui/SuccessModal";
 import { updateUserProfile } from "../../api/patient.api";
 import AuthMessageModal from "../../components/ui/AuthMessageModal";
@@ -374,7 +374,7 @@ export default function EditProfile() {
                   <p className="text-sm text-gray-500 leading-relaxed max-w-md">
                     يسمح بملفات JPG او PNG بحد اقصى 800KB
                   </p>
-                  <Button
+                  <button
                     type="button"
                     variant="outline"
                     size="md"
@@ -382,7 +382,7 @@ export default function EditProfile() {
                     onClick={openAvatarPicker}
                   >
                     رفع صورة
-                  </Button>
+                  </button>
                 </div>
               </div>
             </div>
@@ -505,14 +505,14 @@ export default function EditProfile() {
           </div>
 
           <div className="mt-8 flex justify-center pb-4 sm:pb-6">
-            <Button
+            <button
               type="button"
               variant="primary"
               className="w-full max-w-2xl py-4 rounded-2xl text-lg font-bold shadow-md"
               onClick={handleSubmit}
             >
               حفظ التعديلات
-            </Button>
+            </button>
           </div>
           <AuthMessageModal
             open={modal.open}
