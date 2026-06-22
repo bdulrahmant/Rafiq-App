@@ -47,7 +47,7 @@ const DoctorSignupSuccess = ({ onClose }) => {
           </button>
 
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/doctor/profile")}
             className="w-[180px] h-[52px] bg-[#468EEC] text-white rounded-lg font-semibold text-[16px] shadow-[0px_4px_4px_rgba(0,0,0,0.15)] hover:bg-[#357bd8] transition-colors"
           >
             عرض ملفي المهني
