@@ -24,7 +24,6 @@ export default function Listing() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("nearest");
 
-  // في ملف Listing.jsx، داخل الـ useEffect:
 
 useEffect(() => {
   const fetchDoctors = async () => {
@@ -32,16 +31,14 @@ useEffect(() => {
       setLoading(true);
       setError(null);
 
-      // 🔐 تم استعادة الحماية: إذا لم يوجد توكن، يظهر خطأ "auth"
       const token = localStorage.getItem("token");
       if (!token) {
         setDoctorsData([]);
         setError("auth"); 
         setLoading(false);
-        return; // توقف هنا ولا تكمل طلب الـ API
+        return; 
       }
 
-      // إذا وجد التوكن، أكمل طلب البيانات
       const data = await getDoctorsForListing(search.trim());
       const normalized = normalizeDoctorsList(data);
       
@@ -50,7 +47,7 @@ useEffect(() => {
     } catch (err) {
       console.error("❌ خطأ في جلب الأطباء:", err);
       setDoctorsData([]);
-      // إذا كان الخطأ 401، السيرفر نفسه رفض التوكن
+
       if (err.response?.status === 401) {
         setError("auth");
       } else {
@@ -64,7 +61,7 @@ useEffect(() => {
   const timer = setTimeout(fetchDoctors, 400);
   return () => clearTimeout(timer);
 }, [search]);
-  // تصفية وترتيب الأطباء
+
   const filteredDoctors = useMemo(() => {
     let result = [...doctorsData];
 

@@ -24,13 +24,13 @@ import DoctorCard from "../../components/ui/DoctorCard";
 import SpecialtyBadge from "../../components/ui/SpecialtyBadge";
 import FAQItem from "../../components/ui/FAQItem";
 
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 export default function Landing() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
 
   const doctors = [
@@ -142,10 +142,10 @@ export default function Landing() {
               </div>
 
               <div className="flex gap-10">
-                <Button variant="primary" size="lg" className="px-12">
+                <Button variant="primary" size="lg" className="px-12"  onClick={() => navigate("/login")}>
                   احجز الموعد
                 </Button>
-                <Button variant="outline" size="lg" className="px-12">
+                <Button variant="outline" size="lg" className="px-12"  onClick={() => navigate("/login")}>
                   تصفح الاطباء
                 </Button>
               </div>
@@ -203,11 +203,11 @@ export default function Landing() {
 
             <div className="flex gap-4 justify-end flex-wrap">
 
-              <button className="bg-[#5C8DF6] hover:opacity-90 text-white px-6 py-3 rounded-lg font-cairo">
+              <button className="bg-[#5C8DF6] hover:opacity-90 text-white px-6 py-3 rounded-lg font-cairo"  onClick={() => navigate("/login")}>
                 ابدأ التجربة الآن
               </button>
 
-              <button className="bg-white text-[#468EEC] px-6 py-3 rounded-lg font-cairo border">
+              <button className="bg-white text-[#468EEC] px-6 py-3 rounded-lg font-cairo border"  onClick={() => navigate("/login")}>
                 كيف يعمل رفيقك الصحي؟
               </button>
 
@@ -406,7 +406,7 @@ export default function Landing() {
                 احكي لرفيق أعراضك، وهو يرشح لك التخصص المناسب
               </p>
 
-              <button className="bg-white text-[#468EEC] px-6 py-3 rounded-lg font-cairo hover:opacity-90 transition">
+              <button className="bg-white text-[#468EEC] px-6 py-3 rounded-lg font-cairo hover:opacity-90 transition"  onClick={() => navigate("/login")}>
                 ابدأ التشخيص المبدئي
               </button>
 
