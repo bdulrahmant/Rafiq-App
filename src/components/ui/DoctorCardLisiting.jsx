@@ -25,6 +25,8 @@ export default function DoctorCardListing({ doctor }) {
     // 3️⃣ لو مريض تمام ومسجل فعلاً
     navigate(`/doctor/${doctor.id}`);
   };
+
+  console.log(doctor);
   return (
     <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
 

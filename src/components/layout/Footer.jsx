@@ -1,8 +1,193 @@
+// import { MapPin, Mail, Phone } from "lucide-react";
+// // import { Button } from "../ui/button";
+// import { Button } from "../ui/Button";
+// import { Link, useNavigate } from "react-router-dom";
+
+// import rafiqWhiteLogo from "../../assets/rafiq-white-logo.png";
+
+// export default function Footer() {
+//   const navigate = useNavigate();
+
+//   return (
+//     <footer className="bg-[linear-gradient(180deg,#003B88_45%,#1DA1F2_100%)] text-white">
+
+//       <div
+//         dir="rtl"
+//         className="container mx-auto px-4 py-16"
+//       >
+
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8 items-start">
+
+//           {/* Logo Section */}
+//           <div className="flex flex-col items-start md:items-start text-right space-y-6">
+
+//             <img
+//               src={rafiqWhiteLogo}
+//               alt="رفيق"
+//               className="w-[180px] object-contain"
+//             />
+
+//             <p className="text-sm leading-relaxed max-w-[400px]">
+//               منصّة رفيق تسهّل عليك حجز مواعيد الأطباء في أي وقت
+//               وبخطوات بسيطة، وبوت ذكي يساعدك تفهم أعراضك
+//               ويختار لك التخصص المناسب بسرعة.
+//             </p>
+
+//             <Button
+//               variant="secondary"
+//               className="w-full max-w-[300px]"
+//               onClick={() => navigate("/listing")}
+//             >
+//               احجز الموعد
+//             </Button>
+
+//           </div>
+
+//           {/* Pages */}
+//           <div className="text-center md:text-center">
+
+//             <h3 className="font-changa text-2xl font-semibold mb-6 ">
+//               الصفحات
+//             </h3>
+
+//             <div className="grid grid-cols-2 gap-4">
+
+//               <div className="space-y-3">
+
+//                 <Link
+//                   to="/"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   الرئيسية
+//                 </Link>
+
+//                 <Link
+//                   to="/chatbot"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   رفيقك الصحي
+//                 </Link>
+
+//                 <Link
+//                   to="/listing"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   احجز موعد
+//                 </Link>
+
+//                 <Link
+//                   to="/"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   التخصصات
+//                 </Link>
+
+//               </div>
+
+//               <div className="space-y-3">
+
+//                 <Link
+//                   to="/login"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   تسجيل الدخول
+//                 </Link>
+
+//                 <Link
+//                   to="/"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   الأسئلة الشائعة
+//                 </Link>
+
+//                 <Link
+//                   to="/"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   سياسة الخصوصية
+//                 </Link>
+
+//                 <Link
+//                   to="/"
+//                   className="block hover:text-gray-200 transition"
+//                 >
+//                   الشروط والأحكام
+//                 </Link>
+
+//               </div>
+
+//             </div>
+
+//           </div>
+
+//           {/* Contact */}
+//           <div className="text-right">
+
+//             <h3 className="font-changa text-2xl font-semibold mb-6 flex flex-row-reverse items-center justify-start gap-3">
+//               تواصل معنا
+//             </h3>
+
+//             <div className="space-y-4">
+
+//               <div className="flex flex-row-reverse items-center justify-start gap-3">
+
+//                 <MapPin className="w-5 h-5 shrink-0" />
+
+//                 <span>
+//                   مصر – طنطا
+//                 </span>
+
+//               </div>
+
+//               <div className="flex flex-row-reverse items-center justify-start gap-3">
+
+//                 <Mail className="w-5 h-5 shrink-0" />
+
+//                 <span dir="ltr">
+//                   support@rafiq.com
+//                 </span>
+
+//               </div>
+
+//               <div className="flex flex-row-reverse items-center justify-start gap-3">
+
+//                 <Phone className="w-5 h-5 shrink-0" />
+
+//                 <span dir="ltr">
+//                   +20 1221750614
+//                 </span>
+
+//               </div>
+
+//             </div>
+
+//           </div>
+
+//         </div>
+
+//         {/* Divider */}
+//         <div className="border-t border-white/20 mb-6"></div>
+
+//         {/* Copyright */}
+//         <div className="text-center">
+
+//           <p className="text-sm">
+//             © 2026 منصة رفيق — جميع الحقوق محفوظة
+//           </p>
+
+//         </div>
+
+//       </div>
+
+//     </footer>
+//   );
+// }
+
+
+
 import { MapPin, Mail, Phone } from "lucide-react";
-// import { Button } from "../ui/button";
 import { Button } from "../ui/Button";
 import { Link, useNavigate } from "react-router-dom";
-
 import rafiqWhiteLogo from "../../assets/rafiq-white-logo.png";
 
 export default function Footer() {
@@ -13,18 +198,22 @@ export default function Footer() {
 
       <div
         dir="rtl"
-        className="container mx-auto px-4 py-16"
+        /* Responsive Fix: reduced vertical padding on mobile (py-8), full on md+ (py-16) */
+        className="container mx-auto px-4 py-8 md:py-16"
       >
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8 items-start">
+        {/* Responsive Fix: single column on mobile, 3 columns on md+ with tighter gap on mobile */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-6 md:mb-8 items-start">
 
-          {/* Logo Section */}
-          <div className="flex flex-col items-start md:items-start text-right space-y-6">
+          {/* ── Logo Section ── */}
+          {/* Responsive Fix: center content on mobile, align start on md+ */}
+          <div className="flex flex-col items-center md:items-start text-center md:text-right space-y-4 md:space-y-6">
 
+            {/* Responsive Fix: slightly smaller logo on mobile */}
             <img
               src={rafiqWhiteLogo}
               alt="رفيق"
-              className="w-[180px] object-contain"
+              className="w-[140px] md:w-[180px] object-contain"
             />
 
             <p className="text-sm leading-relaxed max-w-[400px]">
@@ -33,9 +222,10 @@ export default function Footer() {
               ويختار لك التخصص المناسب بسرعة.
             </p>
 
+            {/* Responsive Fix: full-width on mobile, capped at 300px on md+ */}
             <Button
               variant="secondary"
-              className="w-full max-w-[300px]"
+              className="w-full md:max-w-[300px]"
               onClick={() => navigate("/listing")}
             >
               احجز الموعد
@@ -43,120 +233,79 @@ export default function Footer() {
 
           </div>
 
-          {/* Pages */}
-          <div className="text-center md:text-center">
+          {/* ── Pages ── */}
+          <div className="text-center">
 
-            <h3 className="font-changa text-2xl font-semibold mb-6 ">
+            {/* Responsive Fix: slightly smaller heading on mobile */}
+            <h3 className="font-changa text-xl md:text-2xl font-semibold mb-4 md:mb-6">
               الصفحات
             </h3>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 md:gap-4">
 
-              <div className="space-y-3">
-
-                <Link
-                  to="/"
-                  className="block hover:text-gray-200 transition"
-                >
+              <div className="space-y-2 md:space-y-3">
+                <Link to="/" className="block hover:text-gray-200 transition text-sm md:text-base">
                   الرئيسية
                 </Link>
-
-                <Link
-                  to="/chatbot"
-                  className="block hover:text-gray-200 transition"
-                >
+                <Link to="/chatbot" className="block hover:text-gray-200 transition text-sm md:text-base">
                   رفيقك الصحي
                 </Link>
-
-                <Link
-                  to="/listing"
-                  className="block hover:text-gray-200 transition"
-                >
+                <Link to="/listing" className="block hover:text-gray-200 transition text-sm md:text-base">
                   احجز موعد
                 </Link>
-
-                <Link
-                  to="/"
-                  className="block hover:text-gray-200 transition"
-                >
+                <Link to="/" className="block hover:text-gray-200 transition text-sm md:text-base">
                   التخصصات
                 </Link>
-
               </div>
 
-              <div className="space-y-3">
-
-                <Link
-                  to="/login"
-                  className="block hover:text-gray-200 transition"
-                >
+              <div className="space-y-2 md:space-y-3">
+                <Link to="/login" className="block hover:text-gray-200 transition text-sm md:text-base">
                   تسجيل الدخول
                 </Link>
-
-                <Link
-                  to="/"
-                  className="block hover:text-gray-200 transition"
-                >
+                <Link to="/" className="block hover:text-gray-200 transition text-sm md:text-base">
                   الأسئلة الشائعة
                 </Link>
-
-                <Link
-                  to="/"
-                  className="block hover:text-gray-200 transition"
-                >
+                <Link to="/" className="block hover:text-gray-200 transition text-sm md:text-base">
                   سياسة الخصوصية
                 </Link>
-
-                <Link
-                  to="/"
-                  className="block hover:text-gray-200 transition"
-                >
+                <Link to="/" className="block hover:text-gray-200 transition text-sm md:text-base">
                   الشروط والأحكام
                 </Link>
-
               </div>
 
             </div>
 
           </div>
 
-          {/* Contact */}
-          <div className="text-right">
+          {/* ── Contact ── */}
+          {/* Responsive Fix: center on mobile, right-align on md+ */}
+          <div className="text-center md:text-right">
 
-            <h3 className="font-changa text-2xl font-semibold mb-6 flex flex-row-reverse items-center justify-start gap-3">
+            <h3 className="font-changa text-xl md:text-2xl font-semibold mb-4 md:mb-6">
               تواصل معنا
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
 
-              <div className="flex flex-row-reverse items-center justify-start gap-3">
-
+              {/* Responsive Fix: centered contact rows on mobile, right-aligned on md+ */}
+              <div className="flex flex-row-reverse items-center justify-center md:justify-start gap-3">
                 <MapPin className="w-5 h-5 shrink-0" />
-
-                <span>
-                  مصر – طنطا
-                </span>
-
+                <span className="text-sm md:text-base">مصر – طنطا</span>
               </div>
 
-              <div className="flex flex-row-reverse items-center justify-start gap-3">
-
+              <div className="flex flex-row-reverse items-center justify-center md:justify-start gap-3">
                 <Mail className="w-5 h-5 shrink-0" />
-
-                <span dir="ltr">
+                {/* Responsive Fix: break-all prevents long email from overflowing on narrow screens */}
+                <span dir="ltr" className="text-sm md:text-base break-all">
                   support@rafiq.com
                 </span>
-
               </div>
 
-              <div className="flex flex-row-reverse items-center justify-start gap-3">
-
+              <div className="flex flex-row-reverse items-center justify-center md:justify-start gap-3">
                 <Phone className="w-5 h-5 shrink-0" />
-
-                <span dir="ltr">
+                <span dir="ltr" className="text-sm md:text-base">
                   +20 1221750614
                 </span>
-
               </div>
 
             </div>
@@ -166,15 +315,13 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/20 mb-6"></div>
+        <div className="border-t border-white/20 mb-4 md:mb-6"></div>
 
         {/* Copyright */}
         <div className="text-center">
-
-          <p className="text-sm">
+          <p className="text-xs md:text-sm">
             © 2026 منصة رفيق — جميع الحقوق محفوظة
           </p>
-
         </div>
 
       </div>

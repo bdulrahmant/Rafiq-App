@@ -126,17 +126,17 @@ export default function Booking() {
           setAppointmentId(appointment.id);
 
           const appointments = await getMyAppointments();
-          
-console.log("appointments =", appointments);
-console.log("first appointment =", appointments?.[0]);
-          
+
+          console.log("appointments =", appointments);
+          console.log("first appointment =", appointments?.[0]);
+
           const match = appointments.find(
             (item) => item.id.toString() === id.toString(),
           );
-          
+
 
           const resolvedDoctorId = match?.doctorId;
-          
+
           setDoctorId(resolvedDoctorId);
 
           if (resolvedDoctorId) {
@@ -176,6 +176,7 @@ console.log("first appointment =", appointments?.[0]);
     if (!doctorId || !bookingData.day) return;
 
     const fetchSlots = async () => {
+
       try {
         const date = formatDateForApi(
           bookingData.year,
@@ -183,6 +184,11 @@ console.log("first appointment =", appointments?.[0]);
           bookingData.day,
         );
         const slots = await getAvailableSlots(doctorId, date);
+
+        console.log("doctorId =", doctorId);
+        console.log("date =", date);
+        console.log("RAW API =", slots);
+
         const mapped = (slots || []).map(mapSlotToTimeOption);
         setTimeSlots(mapped);
 
@@ -387,10 +393,10 @@ console.log("first appointment =", appointments?.[0]);
                         }));
                       }}
                       className={`p-2 rounded-lg transition-all text-center focus:outline-none ${isSelected
-                          ? "bg-[#468EEC] text-white font-bold shadow-sm"
-                          : item.isPast
-                            ? "text-gray-200 cursor-not-allowed pointer-events-none"
-                            : "hover:bg-blue-50 text-gray-600 font-medium"
+                        ? "bg-[#468EEC] text-white font-bold shadow-sm"
+                        : item.isPast
+                          ? "text-gray-200 cursor-not-allowed pointer-events-none"
+                          : "hover:bg-blue-50 text-gray-600 font-medium"
                         }`}
                     >
                       {item.dayNumber}
@@ -421,8 +427,8 @@ console.log("first appointment =", appointments?.[0]);
                     key={`${slot.id}-${slot.label}`}
                     onClick={() => handleTimeSelect(slot)}
                     className={`py-3 rounded-xl text-xs font-bold border transition-all ${bookingData.time === slot.label
-                        ? "bg-[#468EEC] text-white border-[#468EEC]"
-                        : "border-blue-100 text-[#468EEC] hover:bg-blue-50"
+                      ? "bg-[#468EEC] text-white border-[#468EEC]"
+                      : "border-blue-100 text-[#468EEC] hover:bg-blue-50"
                       }`}
                   >
                     {slot.label}
@@ -454,8 +460,8 @@ console.log("first appointment =", appointments?.[0]);
             onClick={handleSubmit}
             disabled={loading || !bookingData.slotId}
             className={`w-full py-4 rounded-xl font-bold text-lg shadow-md transition-all active:scale-95 ${loading || !bookingData.slotId
-                ? "bg-gray-300 cursor-not-allowed text-white"
-                : "bg-[#468EEC] hover:bg-blue-600 text-white"
+              ? "bg-gray-300 cursor-not-allowed text-white"
+              : "bg-[#468EEC] hover:bg-blue-600 text-white"
               }`}
           >
             {loading
