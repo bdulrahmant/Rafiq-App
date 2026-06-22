@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Info, Check } from "lucide-react";
 import Footer from "../../components/layout/Footer";
-// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import SuccessModal from "../../components/ui/SuccessModal";
 import { changePassword } from "../../api/patient.api";
 import AuthMessageModal from "../../components/ui/AuthMessageModal";
@@ -393,14 +393,14 @@ export default function ChangePassword() {
           </form>
 
           <div className="mt-8 flex justify-center pb-4 sm:pb-6">
-            <button
+            <Button
               type="submit"
               form="change-password-form"
               variant="primary"
               className="w-full max-w-2xl py-4 text-lg font-bold shadow-md rounded-2xl"
             >
               تحديث كلمة المرور
-            </button>
+            </Button>
           </div>
           <AuthMessageModal
             open={modal.open}

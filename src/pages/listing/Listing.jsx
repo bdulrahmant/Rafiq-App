@@ -86,7 +86,7 @@ useEffect(() => {
   const showMore = () => {
     setVisibleCount((prev) => prev + 2);
   };
-console.log("Doctors Data:", filteredDoctors);
+
   return (
     <div dir="rtl" className="min-h-screen bg-gray-50 font-cairo">
       <UserNavbar showAuthButtons={false} />

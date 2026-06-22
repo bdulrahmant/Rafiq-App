@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, User, CalendarDays, Activity, Scale, Ruler, Droplet, FileText, Syringe, Pill, FilePlus2 } from "lucide-react";
-// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import { Card } from "../../components/ui/card";
 import { Badge } from "../../components/ui/badge";
 import { cn } from "../../lib/utils";
@@ -242,9 +242,9 @@ export default function Profile() {
                             </div>
 
                             <div className="flex justify-start mt-6">
-                                <button variant="outline" className="text-gray-500 border-gray-300 hover:bg-gray-50 font-cairo bg-white">
+                                <Button variant="outline" className="text-gray-500 border-gray-300 hover:bg-gray-50 font-cairo bg-white">
                                     اضافة مرض مزمن
-                                </button>
+                                </Button>
                             </div>
                         </Card>
 
@@ -279,9 +279,9 @@ export default function Profile() {
                             </div>
 
                             <div className="flex justify-start mt-6">
-                                <button variant="outline" className="text-gray-500 border-gray-300 hover:bg-gray-50 font-cairo bg-white">
+                                <Button variant="outline" className="text-gray-500 border-gray-300 hover:bg-gray-50 font-cairo bg-white">
                                     اضافة تاريخ طبي
-                                </button>
+                                </Button>
                             </div>
 
                         </Card>

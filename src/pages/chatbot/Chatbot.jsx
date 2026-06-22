@@ -18,7 +18,7 @@ import {
 
 import Navbar from "../../components/layout/UserNavbar";
 import Footer from "../../components/layout/Footer";
-// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import rafiqSalam from "../../assets/rafiq_chat.png";
 import {
   connectSocket,
@@ -449,7 +449,7 @@ export default function Chatbot() {
                   <p className="text-sm text-gray-500 mb-2">أسئلة سريعة:</p>
                   <div className="flex flex-wrap gap-2">
                     {quickQuestions.map((q) => (
-                      <button 
+                      <Button
                         key={q}
                         type="button"
                         variant="outline"
@@ -458,7 +458,7 @@ export default function Chatbot() {
                         onClick={() => handleSendMessage(q)}
                       >
                         {q}
-                      </button >
+                      </Button>
                     ))}
                   </div>
                 </div>

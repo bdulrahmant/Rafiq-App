@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import { ChevronDown, ArrowRight, CloudUpload, Pencil } from "lucide-react";
 import Footer from "../../components/layout/Footer";
 import { useNavigate } from "react-router-dom";
@@ -228,11 +228,11 @@ export default function UploadFilePage() {
 
         {/* Button */}
         <div className="flex justify-center mt-2">
-          <button 
+          <Button
             onClick={handleSubmit}
             className="w-full max-w-[400px] bg-[#468EEC] hover:bg-[#3578d4] text-white rounded-xl py-6 font-bold text-lg">
             حفظ الملف
-          </button >
+          </Button>
           <AuthMessageModal
             open={modal.open}
             title={modal.title}

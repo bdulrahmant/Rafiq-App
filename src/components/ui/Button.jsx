@@ -10,13 +10,6 @@ export function Button({
   const baseStyles =
     "rounded-lg font-cairo font-semibold transition-all duration-200 flex items-center justify-center gap-2";
 
-//   const variants = {
-//     primary: "bg-primary text-white hover:bg-[#3A7AD9]",
-//     secondary:
-//       "bg-white text-primary border border-primary hover:bg-gray-50",
-//     outline:
-//       "bg-transparent text-primary border border-primary hover:bg-primary/10",
-//   };
 
 const variants = {
   primary: "bg-[#468EEC] text-white hover:bg-[#3A7AD9]",

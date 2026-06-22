@@ -22,7 +22,7 @@ import Footer from '../../components/layout/Footer';
 import DoctorCard from '../../components/ui/DoctorCard';
 import AppointmentsSection from "../../components/ui/AppointmentsSection";
 import MedicalFilesSection from "../../components/ui/MedicalFilesSection";
-//  import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import rafiqHeartRobot from "../../assets/rafiq-heart.png";
 
 import DrTaha from "../../assets/Dr.taha.png";

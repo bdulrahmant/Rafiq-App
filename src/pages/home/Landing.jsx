@@ -18,7 +18,7 @@ import Doctors from "../../assets/Doctors.png";
 
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
-// import { Button } from "../../components/ui/button";
+import { Button } from "../../components/ui/button";
 import DoctorCard from "../../components/ui/DoctorCard";
 import SpecialtyBadge from "../../components/ui/SpecialtyBadge";
 import FAQItem from "../../components/ui/FAQItem";
@@ -141,12 +141,12 @@ export default function Landing() {
               </div>
 
               <div className="flex gap-10">
-                <button variant="primary" size="lg" className="px-12">
+                <Button variant="primary" size="lg" className="px-12">
                   احجز الموعد
-                </button>
-                <button variant="outline" size="lg" className="px-12">
+                </Button>
+                <Button variant="outline" size="lg" className="px-12">
                   تصفح الاطباء
-                </button>
+                </Button>
               </div>
             </div>
 
@@ -252,10 +252,10 @@ export default function Landing() {
 
             </div>
 
-            <button variant="primary" size="lg" className="w-full">
+            <Button variant="primary" size="lg" className="w-full">
               <Search className="w-5 h-5" />
               البحث
-            </button>
+            </Button>
 
           </div>
         </div>
